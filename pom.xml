@@ -58,8 +58,8 @@
 			</activation>
 			<properties>
 				<db.url>jdbc:mysql://localhost:3306/decision</db.url>
-				<db.user>root</db.user>
-				<db.password>rama</db.password>
+				<db.user>app</db.user>
+				<db.password>app123</db.password>
 			</properties>
 		</profile>
 		<profile>
