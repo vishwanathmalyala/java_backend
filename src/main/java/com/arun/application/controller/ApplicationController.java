@@ -20,7 +20,7 @@ public class ApplicationController {
 
   @GetMapping(value = "/ping", produces = {MediaType.TEXT_PLAIN_VALUE})
   public String pingMsg(HttpServletRequest httpServletRequest) {
-    return "Ping Works Request RecivedFrom " + httpServletRequest.getRemoteAddr();
+    return "Ping";
   }
 
   @GetMapping(value = "/msg", produces = {MediaType.APPLICATION_JSON_VALUE})
