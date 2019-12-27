@@ -4,6 +4,7 @@ pipeline {
             stage('Init') {
                   steps {
                         echo 'Hi, this is our first Pipeline Job'
+                        echo 'Testing my Pipeline part now'
                   }
             }
             stage('Build') {
