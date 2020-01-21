@@ -1,16 +1,16 @@
 pipeline {
       agent any
       stages {
-            stage('Init') {
+            stage('Checkout') {
                   steps {
                         echo 'Hi, this is our first Pipeline Job'
-                        echo 'Testing my Pipeline part now and again'
+                        git 'https://github.com/devopsfoundary/java_backend.git'
                   }
             }
             stage('Build') {
                   steps {
                         echo 'Building Sample Maven Project'
-                        echo 'Building Sample Java Project as well'            
+                        sh "mvn -Dmaven.test.failure.ignore=true clean package"            
                   }
             }
             stage('Deploy') {
